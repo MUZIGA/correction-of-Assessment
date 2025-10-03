@@ -20,6 +20,18 @@ posts.forEach(post => {
       name: post.user.name,
       articles: []
     };
+    author[userId].articles.push(
+        {
+            id:post.id,
+            title:post.title,
+        comments:post.comments.map(c=> ({
+            id:c.id,
+            content.c.body,
+        }
+            ))
+
+        }
+    )
   }
 });
 }
