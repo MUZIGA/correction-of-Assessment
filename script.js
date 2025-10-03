@@ -32,6 +32,10 @@ posts.forEach(post => {
 
         }
     )
+    const authorsArray=Object.values(author);
+return authorsArray;
   }
+  fetchAuthorsSithArticles().then(authors=>{
+    console.log(JSON.stringify(authors,null,2));
 });
 }
